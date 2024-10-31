@@ -18,7 +18,22 @@ export default {
           },
         },
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            color: '#fff',
+            a: {
+              color: '#0095FF',
+              '&:hover': {
+                color: '#0080FF',
+              },
+            },
+          },
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 };
